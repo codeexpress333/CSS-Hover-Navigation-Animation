@@ -1,0 +1,26 @@
+nav ul li a {
+    margin: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Before And After */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    height: 3px;
+    width: 100%;
+    bottom: 5px;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+nav ul li a:hover::before {
+    bottom: 15px;
+    opacity: 1;
+}
+
